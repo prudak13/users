@@ -7,4 +7,8 @@
        name: noc
        state: present
        shell: /sbin/nologin
-
+   - name: add user 'noc-2'
+     user:
+       name: nocv2
+       state: present
+       shell: /sbin/nologin
