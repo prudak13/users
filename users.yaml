@@ -1,0 +1,6 @@
+- name: add user 'noc'
+  user:
+    name: noc
+    state: present
+    shell: /sbin/nologin
+
