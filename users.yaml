@@ -1,6 +1,10 @@
-- name: add user 'noc'
-  user:
-    name: noc
-    state: present
-    shell: /sbin/nologin
+- name: users 
+  hosts: all
+  become: true
+  tasks:
+   - name: add user 'noc'
+     user:
+       name: noc
+       state: present
+       shell: /sbin/nologin
 
